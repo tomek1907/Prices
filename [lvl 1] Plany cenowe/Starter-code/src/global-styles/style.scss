@@ -1,0 +1,106 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #F9F8FB;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.main-text {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.boxone,
+.boxtwo,
+.boxthree {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #FFF;
+  border-radius: 32px;
+  stroke: 1px;
+  border: 1px #E8E5F9;
+  margin: 25px;
+  width: 300px;
+  height: 390px;
+}
+
+.boxone:hover,
+.boxtwo:hover,
+.boxthree:hover {
+  background-color: #14132B;
+  h3 {
+    color: #FFF;
+  }
+
+  button {
+    background-color: #7863F9;
+  }
+  h2{
+    color: #FFF;
+  }
+  a{
+    color: #FFF;
+  }
+}
+
+.price{
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  color: #989BB4;
+  font-size: 16px;
+}
+
+button {
+  background-color: #14132B;
+  color: #FFF;
+  border-radius: 32px;
+  cursor: pointer;
+  height: 50px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+ul {
+  color: #EE9C50;
+}
+
+a{
+  color: #14132B;
+}
+
+@media screen and (max-width: 1500px) {
+  .content {
+    flex-direction: column;
+  }
+  .boxone,
+  .boxtwo,
+  .boxthree{
+  width: 240px;
+
+}
+}
